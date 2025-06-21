@@ -1,0 +1,24 @@
+body {
+    font-family: "Twemoji Country Flags", sans-serif;
+}
+
+.animacion-fondo {
+    animation: gradient 10s linear infinite;
+}
+@keyframes gradient {
+    0% {
+        background-color: #0ea5e9;
+    }
+    25% {
+        background-color: #075985;
+    }
+    50% {
+        background-color: #6366f1;
+    }
+    75% {
+        background-color: #075985;
+    }
+    100% {
+        background-color: #0ea5e9;
+    }
+}
