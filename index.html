@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Times App</title>
-  </head>
-  <wc-toast></wc-toast>
-  <body
-    class="text-white bg-gradient-to-br from-sky-500 via-sky-800 to-indigo-500 min-h-screen flex items-center justify-center overflow-hidden"
-  >
-    <main
-      class="flex flex-col gap-8 w-full max-w-2xl px-6 md:px-10 text-base sm:text-lg md:text-xl"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="module" src="./main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>Times App</title>
+        <style>
+            body {
+                font-family: "Twemoji Country Flags", sans-serif;
+            }
+        </style>
+    </head>
+    <wc-toast></wc-toast>
+    <body
+        class="text-white bg-gradient-to-br from-sky-500 via-sky-800 to-indigo-500 min-h-screen flex items-center justify-center overflow-hidden"
     >
-      <h1 class="text-4xl font-bold text-center md:text-5xl md:font-extrabold">Times App</h1>
-      <form id="form" class="grid gap-3">
-        <label class="title font-semibold">Choose a date and time</label>
-        <input
-          class="bg-cyan-950 p-4 md:p-5 rounded-md"
-          name="date"
-          type="datetime-local"
-          required
-        />
-      </form>
-      <div class="grid gap-3">
-        <label class="font-semibold">Result:</label>
-        <textarea
-          class="bg-cyan-950 p-4 md:p-5 rounded-md resize-none"
-          name="result"
-          id="result"
-          rows="8"
-          readonly
-          placeholder="Here will be your result..."
-        ></textarea>
-      </div>
-    </main>
-  </body>
+        <main
+            class="flex flex-col gap-8 w-full max-w-2xl px-6 md:px-10 text-base sm:text-lg md:text-xl"
+        >
+            <h1
+                class="text-4xl font-bold text-center md:text-5xl md:font-extrabold"
+            >
+                Times App
+            </h1>
+            <form id="form" class="grid gap-3">
+                <label class="title font-semibold"
+                    >Choose a date and time</label
+                >
+                <input
+                    class="bg-cyan-950 p-4 md:p-5 rounded-md"
+                    name="date"
+                    type="datetime-local"
+                    required
+                />
+            </form>
+            <div class="grid gap-3">
+                <label class="font-semibold">Result:</label>
+                <textarea
+                    class="bg-cyan-950 p-4 md:p-5 rounded-md resize-none"
+                    name="result"
+                    id="result"
+                    rows="8"
+                    readonly
+                    placeholder="Here will be your result..."
+                ></textarea>
+            </div>
+        </main>
+    </body>
 </html>
