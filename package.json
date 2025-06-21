@@ -17,5 +17,10 @@
   },
   "dependencies": {
     "country-flag-emoji-polyfill": "^0.1.8"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false
   }
 }
