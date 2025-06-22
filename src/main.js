@@ -1,5 +1,5 @@
 import { toast } from "https://cdn.skypack.dev/wc-toast"
-import { setInitialDate } from "./utils.js"
+// import { setInitialDate } from "./utils.js"
 import countries from "./countries.json"
 import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill"
 
@@ -22,10 +22,10 @@ const transformDateToString = (date) => {
         minute: "numeric",
     })
 
-    return localDate.replace(":00", "H")
+    return localDate.replace(":00", " h")
 }
 
-const $input = document.querySelector("input")
+const $input = document.querySelector("#date")
 const $result = document.querySelector("#result")
 
 const fillTextArea = () => {
@@ -53,7 +53,7 @@ const fillTextArea = () => {
     })
 
     const sortedTimesEntries = Object.entries(times).sort(
-        ([timeA], [timeB]) => timeB - +timeA
+        ([timeA], [timeB]) => timeB + timeA
     )
 
     const html = sortedTimesEntries
@@ -64,7 +64,7 @@ const fillTextArea = () => {
             const [country] = countries
             const { date } = country
 
-            return `${transformDateToString(date)} ${flags}`
+            return `${transformDateToString(date)} | ${flags}`
         })
         .join("\n")
 
@@ -72,18 +72,19 @@ const fillTextArea = () => {
 }
 
 $input.addEventListener("change", () => {
-    fillTextArea().then(() => {
-        toast("¡Copiado al portapeles!", {
-            icon: {
-                type: "success",
-            },
-        })
+    fillTextArea()
+    toast(`Date changed to ${$input.value}`, {
+        duration: 5000,
+        position: "bottom",
     })
 })
 
+
+
 const onLoad = async () => {
-    setInitialDate()
+    $input.value = '2001-09-14T07:00'
     fillTextArea()
+    toast("App loaded", { icon: { type: "success" }},{duration: 10000})
 }
 
 onLoad()

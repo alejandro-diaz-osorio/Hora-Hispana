@@ -3,45 +3,38 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script type="module" src="./main.js"></script>
+        <script type="module" src="./src/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="stylesheet" href="style.css" />
-        <title>Full Times App</title>
+        <link rel="stylesheet" href="./src/style.css" />
+        <title>HORA HISPANA</title>
     </head>
-    <wc-toast></wc-toast>
     <body
         class="text-white animacion-fondo min-h-screen flex items-center justify-center overflow-hidden"
     >
         <main
-            class="flex flex-col gap-8 w-full max-w-2xl px-6 md:px-10 text-base sm:text-lg md:text-xl"
+            class="flex flex-col gap-8 w-full max-w-lg px-6 md:px-10 sm:text-lg md:text-xl"
         >
-            <h1
-                class="text-4xl font-bold text-center md:text-5xl md:font-extrabold"
-            >
-                Full Times App
-            </h1>
-            <form id="form" class="grid gap-3">
-                <label class="title font-semibold"
-                    >Choose a date and time</label
-                >
-                <input
-                    class="bg-cyan-950 p-4 md:p-5 rounded-md"
-                    name="date"
-                    type="datetime-local"
-                    required
-                />
-            </form>
+            <label class="title font-semibold">Choose a date and time</label>
+            <input
+                value="2001-09-14T07:00"
+                class="bg-cyan-950 p-4 md:p-5 rounded-md cursor-pointer"
+                name="date"
+                id="date"
+                type="datetime-local"
+                autofocus
+            />
             <div class="grid gap-3">
-                <label class="font-semibold">Result:</label>
+                <label class="title font-semibold">Result:</label>
                 <textarea
-                    class="bg-cyan-950 p-4 md:p-5 rounded-md resize-none"
+                    class="bg-cyan-950 p-4 md:p-5 rounded-md resize-none text-lg"
                     name="result"
                     id="result"
                     rows="8"
                     readonly
-                    placeholder="Here will be your result..."
+                    placeholder="At the moment that you change the date, the result will appear here..."
                 ></textarea>
             </div>
         </main>
+        <wc-toast></wc-toast>
     </body>
 </html>

@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Argentina",
+    "country_code": "AR",
+    "timezones": [
+      "America/Argentina/Buenos_Aires"
+    ],
+    "emoji": "🇦🇷"
+  },
+  {
+    "name": "Bolivia, Plurinational State of",
+    "country_code": "BO",
+    "timezones": [
+      "America/La_Paz"
+    ],
+    "emoji": "🇧🇴"
+  },
+  {
+    "name": "Chile",
+    "country_code": "CL",
+    "timezones": [
+      "America/Santiago"
+    ],
+    "emoji": "🇨🇱"
+  },
+  {
+    "name": "Colombia",
+    "country_code": "CO",
+    "timezones": [
+      "America/Bogota"
+    ],
+    "emoji": "🇨🇴"
+  },
+  {
+    "name": "Costa Rica",
+    "country_code": "CR",
+    "timezones": [
+      "America/Costa_Rica"
+    ],
+    "emoji": "🇨🇷"
+  },
+  {
+    "name": "Cuba",
+    "country_code": "CU",
+    "timezones": [
+      "America/Havana"
+    ],
+    "emoji": "🇨🇺"
+  },
+  {
+    "name": "Dominican Republic",
+    "country_code": "DO",
+    "timezones": [
+      "America/Santo_Domingo"
+    ],
+    "emoji": "🇩🇴"
+  },
+  {
+    "name": "Ecuador",
+    "country_code": "EC",
+    "timezones": [
+      "America/Guayaquil"
+    ],
+    "emoji": "🇪🇨"
+  },
+  {
+    "name": "El Salvador",
+    "country_code": "SV",
+    "timezones": [
+      "America/El_Salvador"
+    ],
+    "emoji": "🇸🇻"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "country_code": "GQ",
+    "timezones": [
+      "Africa/Malabo"
+    ],
+    "emoji": "🇬🇶"
+  },
+  {
+    "name": "Guatemala",
+    "country_code": "GT",
+    "timezones": [
+      "America/Guatemala"
+    ],
+    "emoji": "🇬🇹"
+  },
+  {
+    "name": "Honduras",
+    "country_code": "HN",
+    "timezones": [
+      "America/Tegucigalpa"
+    ],
+    "emoji": "🇭🇳"
+  },
+  {
+    "name": "Mexico",
+    "country_code": "MX",
+    "timezones": [
+      "America/Mexico_City"
+    ],
+    "emoji": "🇲🇽"
+  },
+  {
+    "name": "Nicaragua",
+    "country_code": "NI",
+    "timezones": [
+      "America/Managua"
+    ],
+    "emoji": "🇳🇮"
+  },
+  {
+    "name": "Panama",
+    "country_code": "PA",
+    "timezones": [
+      "America/Panama"
+    ],
+    "emoji": "🇵🇦"
+  },
+  {
+    "name": "Paraguay",
+    "country_code": "PY",
+    "timezones": [
+      "America/Asuncion"
+    ],
+    "emoji": "🇵🇾"
+  },
+  {
+    "name": "Peru",
+    "country_code": "PE",
+    "timezones": [
+      "America/Lima"
+    ],
+    "emoji": "🇵🇪"
+  },
+  {
+    "name": "Puerto Rico",
+    "country_code": "PR",
+    "timezones": [
+      "America/Puerto_Rico"
+    ],
+    "emoji": "🇵🇷"
+  },
+  {
+    "name": "Spain",
+    "country_code": "ES",
+    "timezones": [
+      "Europe/Madrid"
+    ],
+    "emoji": "🇪🇸"
+  },
+  {
+    "name": "Uruguay",
+    "country_code": "UY",
+    "timezones": [
+      "America/Montevideo"
+    ],
+    "emoji": "🇺🇾"
+  },
+  {
+    "name": "Venezuela, Bolivarian Republic of",
+    "country_code": "VE",
+    "timezones": [
+      "America/Caracas"
+    ],
+    "emoji": "🇻🇪"
+  }
+]
