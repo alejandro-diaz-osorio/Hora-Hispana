@@ -72,14 +72,6 @@
     "emoji": "🇸🇻"
   },
   {
-    "name": "Equatorial Guinea",
-    "country_code": "GQ",
-    "timezones": [
-      "Africa/Malabo"
-    ],
-    "emoji": "🇬🇶"
-  },
-  {
     "name": "Guatemala",
     "country_code": "GT",
     "timezones": [

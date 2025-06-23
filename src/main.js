@@ -28,16 +28,14 @@ function changeTimeZone(date, timeZone) {
 }
 
 const transformDateToString = (date) => {
-    const localDate = date.toLocaleString("en-US", {
-        weekday: "short",
-        month: "2-digit",
-        day: "numeric",
+    const day = date.toLocaleString("en-US", { weekday: "short" })
+    const hour = date.toLocaleString("en-US", {
         hour12: false,
         hour: "numeric",
         minute: "numeric",
     })
 
-    return localDate.replace(":00", " H")
+    return `${day} | ${hour}`
 }
 
 const fillTextArea = () => {
@@ -105,7 +103,15 @@ $input.addEventListener("change", () => {
 
 $result.addEventListener("click", () => {
     navigator.clipboard.writeText($result.value)
-    toast("Copied to clipboard", { icon: { type: "success" } })
+    toast("Copied to clipboard", {
+        icon: {
+            type: "custom",
+            content: "📋",
+        },
+        theme: {
+            type: "dark",
+        },
+    })
 })
 
 const onLoad = async () => {
