@@ -2,6 +2,7 @@
   "name": "times-app",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,7 +16,9 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "country-flag-emoji-polyfill": "^0.1.8"
+    "@tailwindcss/vite": "^4.1.10",
+    "country-flag-emoji-polyfill": "^0.1.8",
+    "tailwindcss": "^4.1.10"
   },
   "prettier": {
     "trailingComma": "es5",
