@@ -4,17 +4,22 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script type="module" src="./src/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="./src/style.css" />
         <title>HORA HISPANA</title>
     </head>
     <body
         class="text-white animacion-fondo min-h-screen flex items-center justify-center overflow-hidden"
     >
+        <wc-toast position="bottom-center"></wc-toast>
         <main
             class="flex flex-col gap-8 w-full max-w-lg px-6 md:px-10 sm:text-lg md:text-xl"
         >
-            <label class="title font-semibold">Choose a date and time</label>
+            <label class="title font-semibold"
+                >Choose a
+                <span class="underline"> date </span>
+                and
+                <span class="underline">time</span></label
+            >
             <input
                 value="2001-09-14T07:00"
                 class="bg-cyan-950 p-4 md:p-5 rounded-md cursor-pointer"
@@ -35,6 +40,5 @@
                 ></textarea>
             </div>
         </main>
-        <wc-toast></wc-toast>
     </body>
 </html>
