@@ -19,14 +19,6 @@ La aplicación estará disponible en `http://localhost:5173`.
 -   Muestra cómo se ve esa hora en múltiples países hispanohablantes.
 -   Utiliza zonas horarias desde `countries.json`.
 
-## 📦 Construcción
-
-Para compilar el proyecto en modo producción:
-
-```bash
-pnpm build
-```
-
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE).
